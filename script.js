@@ -9,10 +9,9 @@ function createDiv(txt) {
     if (document.getElementById("div") === null) {
         let newDiv = document.createElement("div");
         newDiv.style.position = "absolute";
-        newDiv.style.width = "10vw";
+        newDiv.style.width = "100%";
         newDiv.style.height = "15vh";
-        newDiv.style.top = "45vh";
-        newDiv.style.left = "45vw";
+        newDiv.style.top = "50%";
         newDiv.style.backgroundColor = "red"
         newDiv.style.zIndex = "2";
         newDiv.style.textAlign = "center";
@@ -21,7 +20,8 @@ function createDiv(txt) {
         newDiv.style.fontSize = "2rem"
         newDiv.innerHTML = txt;
         newDiv.id = "div";
-        document.body.appendChild(newDiv);
+        let center = document.getElementById("center")
+        center.appendChild(newDiv);
         return newDiv;
     }
 }
@@ -47,6 +47,12 @@ function resetFunc(div, bool) {
 
 }
 
+function affichage(x){
+    if (x.matches){
+
+    }
+}
+
 submit.addEventListener("click", function () {
     if (input.value.length > 0 && !isNaN(input.value) && (input.value > 0) && (input.value < 100)) {
         if (document.getElementsByTagName("li").length > 10) {
@@ -56,17 +62,17 @@ submit.addEventListener("click", function () {
                 let reset = resetFunc(newDiv);
             }
         } else if (input.value > nbRandom) {
-            fleche.style.left = "40%"
+            fleche.style.left = "50%"
             let newLi = document.createElement("li");
             newLi.innerHTML = input.value;
             use.appendChild(newLi);
         } else if (input.value < nbRandom) {
-            fleche.style.left = "55%"
+            fleche.style.left = "70%"
             let newLi = document.createElement("li");
             newLi.innerHTML = input.value;
             use.appendChild(newLi);
         } else {
-            fleche.style.left = "48%";
+            fleche.style.left = "30%";
             let newLi = document.createElement("li");
             newLi.innerHTML = input.value;
             use.appendChild(newLi);
