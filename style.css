@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.center {
+    width: 50vw;
+    height: 50vh;
+    background-color: lightblue;
+    position: absolute;
+    top: calc(50% - 25vh);
+    left: calc(50% - 25vw);
+    text-align: center;
+    border: 1px solid crimson;
+}
+
+h1 {
+    margin-top: 2%;
+}
+
+#user {
+    position: relative;
+    top: 10%;
+}
+
+#result {
+    position: relative;
+    top: 15%;
+}
+
+#submit {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+    border: 2px solid darkolivegreen;
+    width: 10%;
+}
+
+#arrow {
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+}
+
+#petit {
+    position: absolute;
+    left: 40%;
+    margin-top: 5%;
+}
+#grand {
+    position: absolute;
+    left: 55%;
+    margin-top: 5%;
+}
+
+#bon {
+    position: absolute;
+    margin-top: 5%;
+    left: 48%;
+}
+
+ul {
+    display: block;
+    width: 20%;
+    list-style: none;
+    position: relative;
+    left: 10%;
+    font-size: 2rem;
+}

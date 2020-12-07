@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/78e483bd6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Choisissez un nombre compris entre 1 et 100</h1>
+        <input type="text" id="user">
+        <button id="submit">Submit</button>
+        <span id="restant"></span>
+        <div id="result">
+            <h2>Le nombre est:</h2>
+            <i class="fas fa-arrow-down" id="arrow"></i>
+            <span id="petit">Trop grand</span>
+            <span id="grand">Trop petit</span>
+            <span id="bon">Trouvé !</span>
+        </div>
+        <ul id="nbUse">
+            <li>Nombre deja utilisé :</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
